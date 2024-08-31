@@ -1,0 +1,19 @@
+﻿services:
+  alicunde.system.exam:
+    image: alicunde.system.exam.api
+    build:
+      context: .
+      dockerfile: ../../src/Alicunde.System.Exam.Api/Dockerfile
+    ports:
+      - "8080:80"
+  sql:
+    image: mcr.microsoft.com/azure-sql-edge
+    container_name: sql
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "1"
+      MSSQL_SA_PASSWORD: "KrHuxsXAX9mNrHzv"
+      MSSQL_PID: "Developer"
+      MSSQL_USER: "SA"
+    
