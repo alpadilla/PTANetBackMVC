@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Alicunde.System.Exam.Api.Client\Alicunde.System.Exam.Api.Client.csproj" />
+      <ProjectReference Include="..\Alicunde.System.Exam.Contracts\Alicunde.System.Exam.Contracts.csproj" />
+      <ProjectReference Include="..\Alicunde.System.Exam.Domain\Alicunde.System.Exam.Domain.csproj" />
+      <ProjectReference Include="..\Alicunde.System.Exam.EntityFrameworkCore\Alicunde.System.Exam.EntityFrameworkCore.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.1.1" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+      <PackageReference Include="Riok.Mapperly" Version="3.6.0" />
+    </ItemGroup>
+
+</Project>
